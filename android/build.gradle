@@ -37,6 +37,16 @@ android {
         disable 'InvalidPackage'
     }
     namespace = "com.homex.open_mail_app"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget=11
+    }
+
 }
 
 dependencies {
